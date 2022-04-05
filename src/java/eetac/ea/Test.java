@@ -12,7 +12,8 @@ public class Test {
 
         Class c = Class.forName("eetac.ea.User");
 
-        User u2 = new User("2", "Pere");
+        User u2 = (User) c.newInstance();
+        u2.setName("Pere");
         System.out.println(u2.getNom());
 
         Class c2 = u.getClass();

@@ -2,21 +2,22 @@ package eetac.ea;
 
 public class User {
     String num;
-    String Nombre;
+    String name;
     public User() {
-
-    }
-    public User(String num, String Nombre) {
         this.num = num;
-        this.Nombre=Nombre;
+        this.name=name;
+    }
+    public User(String num, String name) {
+        this.num = num;
+        this.name=name;
     }
 
 
     public String getNom() {
-        return Nombre;
+        return name;
     }
-    public void setNom(String title) {
-        this.Nombre = Nombre;
+    public void setName(String name) {
+        this.name = name;
     }
     public String getID() {
         return num;
